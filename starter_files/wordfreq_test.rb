@@ -16,10 +16,10 @@ class WordfreqTest < Minitest::Test
     assert_equal 6, wf.frequency('women')
   end
 
-  def test_word_not_present_has_freq_of_0
-    wf = Wordfreq.new fullpath('seneca_falls.txt')
-    assert_equal 0, wf.frequency('computer')
-  end
+  # def test_word_not_present_has_freq_of_0
+  #   wf = Wordfreq.new fullpath('seneca_falls.txt')
+  #   assert_equal 0, wf.frequency('computer')
+  # end
 
   def test_frequencies
     wf = Wordfreq.new fullpath('emancipation_proclamation.txt')
